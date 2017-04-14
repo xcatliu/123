@@ -19,6 +19,12 @@
   },
   "homepage": "https://github.com/xcatliu/123#readme",
   "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
     "pagic": "^0.6.0"
+  },
+  "dependencies": {
+    "pinyin": "^2.8.3"
   }
 }

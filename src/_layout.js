@@ -1,22 +1,71 @@
-module.exports = ({ title, content, relativeToRoot }) => `
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,
-      maximum-scale=1.0, user-scalable=no"/>
-    
-    <title>${title}</title>
+/* eslint no-use-before-define:0, prefer-template:0 */
 
-    <link rel="stylesheet" href="${relativeToRoot}/css/mobi.min.css" />
-  </head>
-  <body>
-    <div class="flex-center">
-      <div class="container">
-        ${content}
+const pinyin = require('pinyin');
+
+const CHINESE = /[\u4e00-\u9fa5]/;
+
+module.exports = ({ relativeToRoot, config }) => `
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0,
+        maximum-scale=1.0, user-scalable=no"/>
+      
+      <title>${config.title}</title>
+
+      <link rel="stylesheet" href="${relativeToRoot}/css/mobi.css/mobi.min.css" />
+      <link rel="stylesheet" href="${relativeToRoot}/css/site.css" />
+    </head>
+    <body>
+      <div class="flex-center">
+        <div class="container">
+          ${renderSearch()}
+          ${renderBookmarks({ bookmarks: config.bookmarks })}
+        </div>
       </div>
-    </div>
-  </body>
-</html>
+
+      <script src="${relativeToRoot}/js/search.js"></script>
+    </body>
+  </html>
 `;
+
+function renderSearch() {
+  return `
+    <style id="search-style"></style>
+    <form id="search-form" class="form">
+      <input id="search-input" type="search" placeholder="Type to search" />
+    </form>
+  `;
+}
+
+function renderBookmarks({ bookmarks }) {
+  return `
+    <ul class="site-bookmark-ul flex-left flex-wrap units-gap">
+      ${bookmarks.map(renderBookmark).join('')}
+    </ul>
+  `;
+}
+
+function renderBookmark({ name, url, tags = '' }) {
+  return `
+    <li
+      class="site-bookmark-li unit-0"
+      data-tags="${addPinyin(tags).toLowerCase()}"
+      data-name="${addPinyin(name).toLowerCase()}"
+    >
+      <a href="${url}">${name}</a>
+    </li>
+  `;
+}
+
+function addPinyin(str) {
+  if (!CHINESE.test(str)) {
+    return str;
+  }
+
+  return str + ' ' + pinyin(str, {
+    style: pinyin.STYLE_NORMAL,   // 普通风格，即不带音标。
+  }).join('');
+}

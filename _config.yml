@@ -1,2 +1,20 @@
 src_dir: src
 public_dir: docs
+
+title: xcatliu's personal front page
+
+bookmarks:
+  - name: Inbox
+    url: https://inbox.google.com
+    tags: email, hello world
+  - name: reddit
+    url: https://www.reddit.com/
+    tags: 你好
+  - name: Hacker News
+    url: https://news.ycombinator.com/
+  - name: Hacker News
+    url: https://news.ycombinator.com/
+  - name: Echo JS
+    url: http://www.echojs.com/
+  - name: Product Hunt
+    url: https://www.producthunt.com/
