@@ -5,16 +5,41 @@ title: xcatliu's personal front page
 
 bookmarks:
   - name: Inbox
-    url: https://inbox.google.com
-    tags: email, hello world
+    url: https://inbox.google.com/
+    favicon: https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/ic_product_inbox_16dp_r2_2x.png
+  - name: V2EX
+    url: https://v2ex.com/
+    favicon: /static/img/icon_rayps_64.png
+  - name: CNode
+    url: https://cnodejs.org/
+    favicon: https://o4j806krb.qnssl.com/public/images/cnode_icon_32.png
   - name: reddit
     url: https://www.reddit.com/
-    tags: 你好
-  - name: Hacker News
-    url: https://news.ycombinator.com/
   - name: Hacker News
     url: https://news.ycombinator.com/
   - name: Echo JS
     url: http://www.echojs.com/
   - name: Product Hunt
     url: https://www.producthunt.com/
+  - name: GitHub Trending
+    url: https://github.com/trending
+  - name: 知乎
+    url: https://www.zhihu.com/
+  - name: 掘金
+    url: https://juejin.im/
+  - name: 开发者头条
+    url: https://toutiao.io/
+  - name: 干货集中营
+    url: http://gank.io/
+    favicon: /static/favicon.ico
+  - name: 前端周刊
+    url: http://www.feweekly.com/
+  - name: SegmentFault
+    url: https://segmentfault.com/
+  - name: Startup News
+    url: http://news.dbanotes.net/
+  - name: 黑客派
+    url: https://hacpai.com/
+    favicon: https://static.hacpai.com/images/favicon.png
+  - name: 光谷社区
+    url: http://www.guanggoo.com/

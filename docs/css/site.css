@@ -1,7 +1,35 @@
 .site-bookmark-ul {
   padding-left: 0;
+  margin-top: 7.5px;
 }
 
 .site-bookmark-li {
+  margin-top: 7.5px;
   list-style: none;
+}
+
+.site-bookmark-a {
+  color: #333;
+  padding: 0 7.5px;
+}
+
+.site-bookmark-a:hover,
+.site-bookmark-a:focus,
+.site-bookmark-a-focus {
+  opacity: 1;
+  text-decoration: none;
+  background-color: #f2f2f2;
+}
+
+.site-bookmark-a:focus,
+.site-bookmark-a-focus {
+  outline: 3px auto #2680d9;
+}
+
+.site-bookmark-a:focus ~ .site-bookmark-a-focus {
+  background-color: transparent;
+}
+
+.site-bookmark-name {
+  margin-left: 7.5px;
 }

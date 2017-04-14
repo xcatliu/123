@@ -1,5 +1,6 @@
 /* eslint no-use-before-define:0, prefer-template:0 */
 
+const nodeUrl = require('url');
 const pinyin = require('pinyin');
 
 const CHINESE = /[\u4e00-\u9fa5]/;
@@ -35,7 +36,7 @@ function renderSearch() {
   return `
     <style id="search-style"></style>
     <form id="search-form" class="form">
-      <input id="search-input" type="search" placeholder="Type to search" />
+      <input id="search-input" type="search" placeholder="Type to search" autocomplete="off" />
     </form>
   `;
 }
@@ -48,14 +49,17 @@ function renderBookmarks({ bookmarks }) {
   `;
 }
 
-function renderBookmark({ name, url, tags = '' }) {
+function renderBookmark({ name, url, tags = '', favicon }) {
   return `
     <li
       class="site-bookmark-li unit-0"
       data-tags="${addPinyin(tags).toLowerCase()}"
       data-name="${addPinyin(name).toLowerCase()}"
     >
-      <a href="${url}">${name}</a>
+      <a href="${url}" class="site-bookmark-a flex-middle">
+        <img src="${getFavicon({ url, favicon })}" height="16" width="16" />
+        <span class="site-bookmark-name">${name}</span>
+      </a>
     </li>
   `;
 }
@@ -68,4 +72,8 @@ function addPinyin(str) {
   return str + ' ' + pinyin(str, {
     style: pinyin.STYLE_NORMAL,   // 普通风格，即不带音标。
   }).join('');
+}
+
+function getFavicon({ url, favicon = '/favicon.ico' }) {
+  return nodeUrl.resolve(url, favicon);
 }
