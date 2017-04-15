@@ -71,6 +71,7 @@
       }
       [data-name*="${query}"] {
         order: -1;
+        -ms-flex-order: -1;
       }
       [data-name*="${query}"] .site-bookmark-a {
         opacity: 1;
