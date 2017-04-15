@@ -121,6 +121,11 @@ bookmarks:
   - name: Xcat Liu's Blog
     url: http://blog.xcatliu.com/
     favicon: xcatliu.ico
+  
+  - category: 其他导航站
+  - name: 创造狮
+    url: http://chuangzaoshi.com/
+    favicon: chuangzaoshi.png
 
   - category: 未分类
   - name: Avatars.io - 获取社交网站上的头像
