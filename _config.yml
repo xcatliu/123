@@ -103,6 +103,18 @@ bookmarks:
   - name: Sketchpad - 画图板
     url: https://sketch.io/sketchpad/?lang=zh
     favicon: sketchpad.png
+  - name: 多个地点 ping 服务器
+    url: http://ping.chinaz.com/
+
+  - category: 博客
+  - name: Matrix67
+    url: http://www.matrix67.com/blog/
+  - name: 王垠 - 当然我在扯淡
+    url: http://www.yinwang.org/
+    favicon: yinwang.jpg
+  - name: 水八口记 - 在日本工作的博客爱好者
+    url: https://blog.shuiba.co/archive
+    favicon: shuibaco.ico
 
   - category: 网站管理
   - name: Name.com
@@ -111,9 +123,7 @@ bookmarks:
   - name: Google Analytics
     url: https://analytics.google.com/analytics/web/
     favicon: google-analytics.png
-  - name: 多个地点 ping 服务器
-    url: http://ping.chinaz.com/
-  
+
   - category: 个人作品
   - name: xcatliu / 流浪小猫
     url: http://xcatliu.com/
