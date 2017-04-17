@@ -58,6 +58,9 @@ bookmarks:
   - name: 光谷社区
     url: http://www.guanggoo.com/
     favicon: guanggoo.ico
+  - name: Ruby China
+    url: https://ruby-china.org/
+    favicon: ruby-china.png
 
   - category: 社交网络
   - name: 知乎
@@ -105,8 +108,26 @@ bookmarks:
     favicon: sketchpad.png
   - name: 多个地点 ping 服务器
     url: http://ping.chinaz.com/
+  - name: Unsplash It - 随机图片服务
+    url: https://unsplash.it/
+    favicon: unsplash-it.ico
+  - name: UZER.ME - 在线 PS
+    url: https://uzer.me/
+    favicon: user-me.ico
+  - name: nodei.co - npm 状态图
+    url: https://nodei.co/
+    favicon: npm.png
+  - name: Mobile-Friendly Test
+    url: https://search.google.com/search-console/mobile-friendly
+    favicon: mobile-friendly-test.png
+  - name: RegExr
+    url: http://regexr.com/
+    favicon: regexr.ico
 
   - category: 博客
+  - name: Xcat Liu's Blog
+    url: http://blog.xcatliu.com/
+    favicon: xcatliu.ico
   - name: Matrix67
     url: http://www.matrix67.com/blog/
   - name: 王垠 - 当然我在扯淡
@@ -115,6 +136,9 @@ bookmarks:
   - name: 水八口记 - 在日本工作的博客爱好者
     url: https://blog.shuiba.co/archive
     favicon: shuibaco.ico
+  - name: 卜卜口 - 可能是世界最快博客
+    url: http://mouto.org/#!home
+    favicon: mouto.jpg
 
   - category: 网站管理
   - name: Name.com
@@ -124,14 +148,6 @@ bookmarks:
     url: https://analytics.google.com/analytics/web/
     favicon: google-analytics.png
 
-  - category: 个人作品
-  - name: xcatliu / 流浪小猫
-    url: http://xcatliu.com/
-    favicon: xcatliu.ico
-  - name: Xcat Liu's Blog
-    url: http://blog.xcatliu.com/
-    favicon: xcatliu.ico
-  
   - category: 其他导航站
   - name: 创造狮
     url: http://chuangzaoshi.com/

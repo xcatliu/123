@@ -11,8 +11,11 @@
   searchInput.addEventListener('keyup', handleSearchInputKeyup);
 
   function handleGlobalKeyup(e) {
+    if (e.altKey || e.ctrlKey || e.metaKey || document.activeElement === searchInput) {
+      return;
+    }
     var c = String.fromCharCode(e.keyCode).toLowerCase();
-    if (c.match(/\w/) && document.activeElement !== searchInput) {
+    if (c.match(/\w/)) {
       searchInput.focus();
       searchInput.value = c;
       handleSearchInputKeyup();
