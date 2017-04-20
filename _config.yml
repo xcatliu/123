@@ -113,7 +113,7 @@ bookmarks:
     favicon: unsplash-it.ico
   - name: UZER.ME - 在线 PS
     url: https://uzer.me/
-    favicon: user-me.ico
+    favicon: uzer-me.ico
   - name: nodei.co - npm 状态图
     url: https://nodei.co/
     favicon: npm.png
@@ -123,6 +123,8 @@ bookmarks:
   - name: RegExr
     url: http://regexr.com/
     favicon: regexr.ico
+  - name: 在线屏幕测试
+    url: http://pingmu.zh-ang.com/
 
   - category: 博客
   - name: Xcat Liu's Blog
@@ -143,6 +145,8 @@ bookmarks:
   - category: 文章收藏
   - name: WebCore Rendering - 深入理解 css
     url: https://webkit.org/blog/114/webcore-rendering-i-the-basics/
+  - name: 图说设计模式
+    url: https://design-patterns.readthedocs.io/zh_CN/latest/index.html
 
   - category: 网站管理
   - name: Name.com
