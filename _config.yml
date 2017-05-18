@@ -125,6 +125,9 @@ bookmarks:
     favicon: regexr.ico
   - name: 在线屏幕测试
     url: http://pingmu.zh-ang.com/
+  - name: 域名商价格对比
+    favicon: domcomp.png
+    url: https://www.domcomp.com/
 
   - category: 博客
   - name: Xcat Liu's Blog
